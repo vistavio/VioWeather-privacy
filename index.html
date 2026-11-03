@@ -33,14 +33,17 @@
 <p class="lang-note">Türkçe metin aşağıdadır · English version below</p>
 
 <h1>VioWeather — Gizlilik Politikası</h1>
-<p><em>Yürürlük tarihi: 3 Ağustos 2026</em></p>
+<p><em>Yürürlük tarihi: 3 Kasım 2026 (ilk sürüm: 3 Ağustos 2026)</em></p>
 
 <p>VioWeather ("uygulama"), Vistavio tarafından geliştirilen bir hava durumu uygulamasıdır. Bu sayfa, uygulamayı kullanırken hangi verilerin nasıl işlendiğini açıklar.</p>
 
 <h2>Topladığımız veriler</h2>
 <ul>
-  <li><strong>Konum:</strong> "Mevcut Konumu Ekle" özelliğini kullanırsanız, cihazınızın konumu (enlem/boylam) yalnızca o an için hava durumu verisi çekmek amacıyla kullanılır. Konum bilgisi Vistavio'nun herhangi bir sunucusuna gönderilmez veya saklanmaz; yalnızca hava durumu sağlayıcısına (Open-Meteo) sorgu yapmak için kullanılır.</li>
-  <li><strong>Favori şehirler ve ayarlar:</strong> Eklediğiniz şehirler, sıcaklık birimi, dil, bildirim tercihleri gibi ayarlar yalnızca cihazınızda yerel olarak saklanır. Bu veriler hiçbir sunucuya gönderilmez.</li>
+  <li><strong>Konum:</strong> "Mevcut Konumu Ekle" özelliğini kullanırsanız, cihazınızın konumu (enlem/boylam) yalnızca o an için hava durumu verisi çekmek amacıyla, hava durumu sağlayıcısına (Open-Meteo) sorgu olarak gönderilir. Bu konum Vistavio tarafından saklanmaz.</li>
+  <li><strong>Yaklaşık konum (ilk açılış):</strong> Uygulama, ilk açılışta size şehrinizi önerebilmek için internet bağlantınızın IP adresinden yaklaşık konumunuzu (şehir düzeyinde) bir kez belirler. Bu istek Vistavio'nun Cloudflare üzerindeki küçük bir hizmetine gider; sonuç (şehir ve yaklaşık koordinat) yalnızca cihazınıza döner, sunucuda saklanmaz, kayıt tutulmaz ve üçüncü taraflarla paylaşılmaz. Önerilen şehri istediğiniz an değiştirebilirsiniz.</li>
+  <li><strong>Kullanım istatistikleri:</strong> Uygulamayı geliştirmek için Google Firebase Analytics kullanılır: hangi ekranların açıldığı, ilk açılış adımları, uygulama hataları gibi kullanım olayları ile cihaz/uygulama örneği kimliği ve IP adresinden türetilen yaklaşık (şehir düzeyinde) konum. Bu veriler adınızla, e-postanızla veya favori şehirlerinizle ilişkilendirilmez.</li>
+  <li><strong>Bildirimler:</strong> Hava uyarıları ve duyurular Google Firebase Cloud Messaging ile gönderilir. Bunun için cihazınız, favori şehirlerinizin bulunduğu illere ve uygulama dilinize göre "konu"lara abone olur (ör. bir ilin plaka numarası); konu adlarında kişisel bilgi bulunmaz.</li>
+  <li><strong>Favori şehirler ve ayarlar:</strong> Eklediğiniz şehirler, sıcaklık birimi, dil, bildirim tercihleri gibi ayarlar cihazınızda saklanır ve Vistavio'ya gönderilmez. Android'in yedekleme özelliği açıksa bu ayarlar, Android tarafından Google hesabınızdaki uygulama yedeğine alınır; uygulamayı yeniden kurduğunuzda geri yüklenir.</li>
   <li><strong>Reklam verileri:</strong> Uygulama, Google AdMob aracılığıyla banner ve native reklamlar gösterir. Google, reklam sunumu ve (izin verdiyseniz) kişiselleştirme amacıyla reklam kimliği (Advertising ID), cihaz bilgileri ve IP adresi gibi verileri kendi Gizlilik Politikası kapsamında işleyebilir.</li>
 </ul>
 
@@ -48,13 +51,16 @@
 <ul>
   <li><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo</a> — hava durumu ve şehir arama (geocoding) verisi</li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> — reklam gösterimi</li>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase</a> (Analytics, Cloud Messaging) — kullanım istatistikleri ve bildirimler</li>
+  <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a> — ilk açılıştaki yaklaşık konum hizmeti</li>
+  <li>GitHub — uygulamanın okuduğu uyarı ve sürüm dosyaları; RainViewer, NASA GIBS, EUMETSAT ve OpenStreetMap — radar, uydu ve harita görüntüleri. Bu servisler, istek sırasında cihazınızın IP adresini görür.</li>
 </ul>
 
 <h2>Hesap ve kişisel bilgiler</h2>
 <p>Uygulama herhangi bir kullanıcı hesabı gerektirmez; ad, e-posta, telefon numarası gibi kişisel bilgi toplamaz.</p>
 
 <h2>Veri saklama ve silme</h2>
-<p>Tüm uygulama verileri (favoriler, ayarlar) yalnızca cihazınızda saklanır. Uygulamayı kaldırdığınızda veya cihaz ayarlarından uygulama verisini temizlediğinizde bu veriler silinir.</p>
+<p>Uygulama verileri (favoriler, ayarlar) cihazınızda saklanır. Uygulamayı kaldırdığınızda veya cihaz ayarlarından uygulama verisini temizlediğinizde cihazdaki veriler silinir; Google hesabınızdaki uygulama yedeği Android ve Google hesabı ayarlarınızdan yönetilir. Kullanım istatistikleri Firebase'in saklama süreleri kapsamında tutulur.</p>
 
 <h2>Çocukların gizliliği</h2>
 <p>VioWeather, 13 yaş altındaki çocukları hedeflememektedir ve bilerek onlardan veri toplamaz.</p>
@@ -68,14 +74,17 @@
 <hr>
 
 <h1>VioWeather — Privacy Policy</h1>
-<p><em>Effective date: August 3, 2026</em></p>
+<p><em>Effective date: November 3, 2026 (first version: August 3, 2026)</em></p>
 
 <p>VioWeather ("the app") is a weather app developed by Vistavio. This page explains what data is processed while using the app, and how.</p>
 
 <h2>Data we collect</h2>
 <ul>
-  <li><strong>Location:</strong> If you use "Add Current Location", your device's location (latitude/longitude) is used only at that moment to fetch weather data. Location data is never sent to or stored on any Vistavio server — it is used solely to query the weather provider (Open-Meteo).</li>
-  <li><strong>Favorite cities and settings:</strong> Cities you add, your temperature unit, language, and notification preferences are stored only locally on your device. None of this is sent to any server.</li>
+  <li><strong>Location:</strong> If you use "Add Current Location", your device's location (latitude/longitude) is sent only at that moment as a query to the weather provider (Open-Meteo) to fetch weather data. Vistavio does not store it.</li>
+  <li><strong>Approximate location (first launch):</strong> On first launch, the app determines your approximate location (city level) once from your internet connection's IP address in order to suggest your city. The request goes to a small Vistavio service on Cloudflare; the result (city and approximate coordinates) is returned only to your device, is not stored on the server, is not logged, and is not shared with third parties. You can change the suggested city at any time.</li>
+  <li><strong>Usage statistics:</strong> To improve the app, Google Firebase Analytics is used: usage events such as which screens are opened, first-launch steps and app errors, together with a device/app instance identifier and an approximate (city-level) location derived from the IP address. This data is not linked to your name, email or favorite cities.</li>
+  <li><strong>Notifications:</strong> Weather alerts and announcements are sent with Google Firebase Cloud Messaging. For this, your device subscribes to "topics" for the provinces of your favorite cities and for your app language (e.g. a province's plate number); topic names contain no personal information.</li>
+  <li><strong>Favorite cities and settings:</strong> Cities you add, your temperature unit, language and notification preferences are stored on your device and are not sent to Vistavio. If Android backup is on, Android includes these settings in the app backup in your Google account, and they are restored when you reinstall the app.</li>
   <li><strong>Advertising data:</strong> The app shows banner and native ads via Google AdMob. Google may process your advertising ID, device information, and IP address for ad delivery and (where you've consented) personalization, under its own Privacy Policy.</li>
 </ul>
 
@@ -83,13 +92,16 @@
 <ul>
   <li><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo</a> — weather and city search (geocoding) data</li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> — ad serving</li>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase</a> (Analytics, Cloud Messaging) — usage statistics and notifications</li>
+  <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a> — the first-launch approximate location service</li>
+  <li>GitHub — alert and version files the app reads; RainViewer, NASA GIBS, EUMETSAT and OpenStreetMap — radar, satellite and map imagery. These services see your device's IP address during the request.</li>
 </ul>
 
 <h2>Accounts and personal information</h2>
 <p>The app does not require any user account and does not collect personal information such as name, email, or phone number.</p>
 
 <h2>Data retention and deletion</h2>
-<p>All app data (favorites, settings) is stored only on your device. Uninstalling the app, or clearing its data from device settings, deletes this data.</p>
+<p>App data (favorites, settings) is stored on your device. Uninstalling the app, or clearing its data from device settings, deletes the data on the device; the app backup in your Google account is managed from your Android and Google account settings. Usage statistics are kept under Firebase's retention periods.</p>
 
 <h2>Children's privacy</h2>
 <p>VioWeather is not directed at children under 13 and does not knowingly collect data from them.</p>
